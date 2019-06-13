@@ -1,0 +1,12 @@
+<app-form  ></app-form>
+<section>
+  <div class="row">
+    <div class="message" *ngFor="let message of messages">
+      <app-question  [message]='message' >
+
+      </app-question>
+    </div>
+    
+  </div>
+</section>
+ 

@@ -1,0 +1,22 @@
+<section class="from">
+  <form #formForReser="ngForm" [formGroup]="form" (ngSubmit)="onSubmit(formForReser)">
+    <mat-form-field class="message">
+      <textarea 
+        matInput 
+        #message 
+        maxlength="256" 
+        placeholder="Ваш вопрос"
+        formControlName="message"
+        ></textarea>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+    <button 
+      class="btn-submit" 
+      mat-raised-button 
+      color="primary"
+      [disabled]='form.invalid'
+      type="submit">
+      Отправить вопрос
+    </button>
+  </form>
+</section> 

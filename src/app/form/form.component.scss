@@ -1,0 +1,16 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+form{
+    padding: 1em;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    box-shadow: 0 0 10px -4px #000;
+}
+
+.message, .btn-submit{
+    width: 100%;
+}

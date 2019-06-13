@@ -1,0 +1,19 @@
+<article class="question">
+  <div class="question-row">
+    <p class="question-text">
+      {{message.text}}
+    </p>
+    <div class="question-like"
+      (click)="like()"
+    >
+      <i 
+        class="material-icons"
+        [ngClass]="{'active': message.like}">
+        favorite
+      </i>
+      <div class="question-like-count">
+        {{message.likesCount}}
+      </div>
+    </div>
+  </div>
+</article>

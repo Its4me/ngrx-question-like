@@ -1,0 +1,46 @@
+.question{
+    width: 100%;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 4px -2px;
+}
+.question-row{
+    display: flex;
+}
+.question-like{
+    flex: 0 0 45px;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+    i.active{
+        animation: like 0.4s;
+    }
+}
+.question-text{
+    width: 100%;
+    white-space: pre-line;
+}
+.active{
+    color: rgb(247, 71, 71)
+}
+@keyframes like {
+    20%{
+        transform: scale(0.9)
+    }
+    40%{
+        transform: scale(1)
+    }
+    60%{
+        transform: scale(1.15)
+    }
+    100%{
+        transform: scale(1)
+    }
+    
+}
